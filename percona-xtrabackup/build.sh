@@ -9,7 +9,7 @@ DEBIAN_FRONTEND=noninteractive
 #echo "deb http://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona-release.list
 
 apt-get -qq update
-apt-get -qq -y install curl percona-xtrabackup
+apt-get -qq -y install curl percona-xtrabackup percona-toolkit mytop
 
 # cleanup install
 
