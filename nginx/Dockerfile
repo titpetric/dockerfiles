@@ -27,6 +27,4 @@ RUN	/install/pre-install/10_start.sh && \
 	/install/post-install/50_test_nginx.sh && \
 	/install/post-install/99_cleanup.sh
 
-COPY files/ /
-
 ENTRYPOINT ["/start.sh"]
