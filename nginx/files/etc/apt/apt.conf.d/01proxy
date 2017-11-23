@@ -1,3 +1,0 @@
-# points to ip of host (docker0 interface)
-
-Acquire::http { Proxy "http://172.17.0.1:3142"; };
