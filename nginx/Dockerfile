@@ -16,7 +16,7 @@ COPY files/ /install/
 
 RUN	/install/pre-install/10_start.sh && \
 	apt-get -y --force-yes install \
-	rsync net-tools dnsutils realpath inotify-tools supervisor libc-bin locales ssmtp apt-transport-https ca-certificates gnupg2 dirmngr \
+	rsync net-tools dnsutils realpath inotify-tools supervisor libc-bin locales ssmtp apt-transport-https ca-certificates gnupg2 dirmngr wget \
 	nginx-extras \
 	lua5.1 lua-nginx-redis lua-cjson luarocks && \
 	/install/post-install/00_config.sh && \
